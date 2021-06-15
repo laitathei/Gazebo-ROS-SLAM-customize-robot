@@ -22,6 +22,8 @@ cd ~/rtabmap_ws
 git clone https://github.com/introlab/rtabmap_ros.git src/rtabmap_ros
 catkin_make
 ```
+### If you are successed to install rtabmap_ros packages, you should saw the following photo
+![image](https://github.com/laitathei/Gazebo-ROS-SLAM-customize-robot/blob/main/demo.jpeg)
 ### Correct the rtabmap.launch file line 57 to line 61 to following
 ```XML
   <!-- RGB-D related topics -->
