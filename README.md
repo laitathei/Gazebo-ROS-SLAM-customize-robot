@@ -3,6 +3,7 @@
 ### This guideline followed https://blog.csdn.net/zxl970921/article/details/114982558 work
 ### Installation for rtabmap_ros packages in ROS
 ```XML
+git clone https://github.com/introlab/rtabmap.git rtabmap
 mkdir -p ~/rtabmap_ws/src 
 cd ..           
 cd ~/rtabmap_ws                                         
