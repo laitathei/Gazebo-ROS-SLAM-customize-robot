@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- rosservice call /enable_motors true -->
+	<!-- overwriting these args -->
+	<arg name="debug" default="false" />
+	<arg name="gui" default="true" />
+	<arg name="pause" default="true" />
+	<arg name="world" default="$(find slam_car)/map/race_map/race_map.world" />
+
+	<!-- include gazebo_ros launcher -->
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="world_name" value="$(arg world)" />
+		<arg name="debug" value="$(arg debug)" />
+		<arg name="gui" value="$(arg gui)" />
+		<arg name="paused" value="$(arg pause)" />
+		<arg name="use_sim_time" value="true" />
+	</include>
+
+	<node pkg="map_server" type="map_saver" name="map_saver" args="-f /home/lai/catkin_ws/src/slaar/map/race_map/race_map.world" output="screen">
+		<remap from="map" to="/map" /> 		
+	</node>
+    
+</launch>
