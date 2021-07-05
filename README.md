@@ -47,5 +47,5 @@ rosrun map_server map_saver -f map
 ### Two way to record the map
 1. gmapping and AMCL package
 2. Rtabmap
-*** Remark: this repositories used the method one
+***Remark: this repositories used the method one
 
