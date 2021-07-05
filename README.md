@@ -10,7 +10,7 @@ cd ~/rtabmap_ws
 catkin_make
 sudo gedit ~/.bashrc
 ```
-### Add source ~/rtabmap_ws/devel/setup.bashrc at the end of the file
+### Add `source ~/rtabmap_ws/devel/setup.bashrc` at the end of the file
 ### Open another terminal and type following command
 ```XML
 sudo apt-get install ros-melodic-rtabmap ros-melodic-rtabmap-ros
