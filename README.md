@@ -38,6 +38,10 @@ catkin_make
 roslaunch realsense2_camera rs_rgbd.launch 
 roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start"
 ```
+### Installation for gmapping package of melodic version
+```XML
+sudo apt-get install ros-melodic-gmapping
+```
 ### Please ensure the laser scan topic is published before to record the map
 ### Choose map as the fix frame in rviz and add the robotmodel and laser scan topic to rviz
 ### Once you start the process, you should scan all obstacle and save the map via following command
@@ -47,5 +51,5 @@ rosrun map_server map_saver -f map
 ### Two way to record the map
 1. gmapping and AMCL package
 2. Rtabmap
-***Remark: this repositories used the method one
+Remark: this repositories used the method one
 
